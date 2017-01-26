@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Navigation Bar</title>
+
+        <!-- 開始製作CSS樣板 -->
+        <style>
+            
+        /* 無序清單製作 */    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration:underline;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: deepskyblue;
+            min-width: 160px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: white}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        /* 按鈕製作 */
+        .button {
+            background-color: green; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .button:hover{
+            background-color: blue;
+        }
+        </style>
+    </head>
+    
+    <body>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropbtn">News</a>
+      <!--製作新聞-->
+      <div class="dropdown-content">
+       <a href="http://edition.cnn.com/"> CNN News</a>
+       <a href="http://www.bbc.com/news"> BBC News</a>
+       <a href="http://www.taiwannews.com.tw/">Taiwan News</a>
+        </div>
+      <li class="dropdown">
+       <!--製作影片-->
+        <a href="#" class="dropbtn">Videos</a>
+        <div class="dropdown-content">
+          <a href="http://www.americanshowsinc.com/">American Shows</a>
+          <a href="http://www.sidereel.com/tv-genres/british">British Shows</a>
+          <a href="http://sugoideas.com/">Taiwan Shows</a>
+        </div>
+      </li>
+    </ul>
+
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+    <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+    
+    
+    <p>----------------------------------</p>
+    <h2>Button Groups</h2>
+    <p>Remove margins and float the buttons to create a button group:</p>
+    <p style="clear:both"><br>Remember to clear floats after, or else will this p element also float next to the buttons.</p>
+    
+    <a href="https://www.nsf.gov/" button class="button">National Science Foundation</button>
+    <a href="http://www.nationalgeographic.com/" button class="button">National Geography</button>
+    <img src="internet-for-english.jpg">
+    </body>
+</html>
+
